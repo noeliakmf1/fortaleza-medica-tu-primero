@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fortaleza Médica | Lista 1 – Consejo Regional V Arequipa | Elecciones CMP 2026</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- FontAwesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crv: {
+                            guinda: '#6B1252',
+                            guindaDark: '#4A0B38',
+                            guindaLight: '#8C1B6C',
+                            dorado: '#D4AF37',
+                            doradoLight: '#F3E5AB',
+                            doradoDark: '#A38118',
+                            fondo: '#FAF8F5'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .gradient-guinda {
+            background: linear-gradient(135deg, #6B1252 0%, #4A0B38 100%);
+        }
+        .gold-border {
+            border: 2px solid #D4AF37;
+        }
+    
+html { scroll-behavior: smooth; }
+</style>
+</head>
+<body class="bg-crv-fondo text-slate-800 font-sans antialiased selection:bg-crv-dorado selection:text-crv-guindaDark relative pb-12">
+<!-- BOTONES FLOTANTES PARA COMPARTIR (WHATSAPP Y FACEBOOK) -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-center">
+<!-- Compartir por Facebook -->
+<a class="bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-blue-500 hover:scale-110 transition border-2 border-white" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fweb-decanato.vercel.app" rel="noopener noreferrer" target="_blank" title="Compartir en Facebook">
+<i class="fa-brands fa-facebook-f text-2xl"></i>
+</a>
+<!-- Compartir por WhatsApp -->
+<a class="bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-emerald-500 hover:scale-110 transition border-2 border-white" href="https://api.whatsapp.com/send?text=%C2%A1Hola!%20Te%20invito%20a%20conocer%20las%20propuestas%20de%20FORTALEZA%20M%C3%89DICA%20para%20el%20Consejo%20Regional%20V%20Arequipa%20del%20CMP.%20Ingresa%20aqu%C3%AD:%20https://web-decanato.vercel.app" rel="noopener noreferrer" target="_blank" title="Compartir por WhatsApp">
+<i class="fa-brands fa-whatsapp text-3xl"></i>
+</a>
+</div>
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-crv-dorado shadow-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<!-- LOGO DE FORTALEZA MEDICA + CMP -->
+<div class="flex items-center gap-3">
+<img alt="Logo Fortaleza Médica" class="h-12 w-auto object-contain" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="logo-fortaleza-medica.png"/>
+<div class="hidden w-12 h-12 rounded-full bg-crv-guinda items-center justify-center text-crv-dorado font-serif font-bold text-xl border-2 border-crv-dorado shadow">
+                        FM
+                    </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="block text-base font-black uppercase tracking-wider text-crv-guinda font-serif">FORTALEZA MÉDICA</span>
+<span class="bg-crv-dorado text-crv-guindaDark font-bold text-[10px] px-2 py-0.5 rounded-full uppercase">Tu Primero</span>
+</div>
+<span class="block text-xs font-semibold text-slate-600 font-serif">Consejo Regional V Arequipa - CMP</span>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+<a class="text-crv-guinda hover:text-crv-dorado transition" href="#inicio">Inicio</a><a class="hidden md:inline-block text-sm font-semibold hover:text-[#D4AF37] transition" href="#porque">¿Por qué Fortaleza?</a>
+<a class="text-slate-700 hover:text-crv-guinda transition" href="#candidato">Conoce al candidato</a>
+<a class="text-slate-700 hover:text-crv-guinda transition" href="#equipo">Equipo</a>
+<a class="text-slate-700 hover:text-crv-guinda transition" href="#sectores">Propuestas</a>
+<a class="text-slate-700 hover:text-crv-guinda transition" href="#arquitectura">Plan de Gobierno</a>
+<a class="text-slate-700 hover:text-crv-guinda transition" href="#ejes">7 Ejes</a>
+</div>
+<a class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-bold text-white gradient-guinda border border-crv-dorado hover:opacity-95 shadow-md transition transform hover:-translate-y-0.5" href="#adhesion">Adhesión</a>
+</div>
+</div>
+</nav>
+<!-- Header Banner -->
+<header class="gradient-guinda text-white relative overflow-hidden py-12 md:py-16 border-b-4 border-crv-dorado" id="inicio">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-crv-dorado/20 border border-crv-dorado text-crv-doradoLight font-semibold text-xs md:text-sm tracking-widest uppercase mb-4 shadow-sm">
+                Elecciones CMP 2026 · Consejo Regional V Arequipa
+            </span>
+<h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold font-serif leading-tight text-white mb-3">
+                FORTALEZA MÉDICA
+            </h1>
+<p class="text-xl md:text-3xl font-bold font-serif text-crv-dorado tracking-wide mb-2 drop-shadow">
+                "TU PRIMERO"
+            </p>
+<p class="text-sm md:text-base text-slate-200 max-w-2xl mx-auto mt-2">
+                Un Colegio Médico Fuerte, Transparente, Humano y al Servicio Verdadero del Colegiado en Arequipa.
+            </p>
+<div class="w-32 h-1 bg-crv-dorado mx-auto rounded-full my-4"></div>
+</div>
+</header><section class="py-14 bg-slate-50 border-y border-slate-200" id="porque">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-10">
+<span class="inline-flex items-center rounded-full bg-[#6B1252]/10 px-4 py-1.5 text-sm font-bold text-[#6B1252]">¿POR QUÉ FORTALEZA MÉDICA?</span>
+<h2 class="mt-4 text-3xl md:text-4xl font-black text-slate-900">Una propuesta para entenderse en pocos minutos</h2>
+<p class="mt-4 text-slate-600 text-lg">Conoce primero al candidato y al equipo; luego revisa las propuestas por sector, el plan de gobierno y los 7 ejes programáticos.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-5">
+<a class="group bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition" href="#candidato">
+<div class="w-12 h-12 rounded-xl bg-[#6B1252] text-white flex items-center justify-center text-xl font-black mb-4">01</div>
+<h3 class="text-xl font-bold text-slate-900">Conoce al candidato</h3>
+<p class="mt-2 text-slate-600">Trayectoria, perfil y hoja de vida del candidato a Decano.</p>
+<span class="inline-block mt-4 text-[#6B1252] font-bold group-hover:translate-x-1 transition">Ver perfil →</span>
+</a>
+<a class="group bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition" href="#sectores">
+<div class="w-12 h-12 rounded-xl bg-[#6B1252] text-white flex items-center justify-center text-xl font-black mb-4">02</div>
+<h3 class="text-xl font-bold text-slate-900">Propuestas por sector</h3>
+<p class="mt-2 text-slate-600">Revisa las soluciones planteadas para los distintos ámbitos del ejercicio médico.</p>
+<span class="inline-block mt-4 text-[#6B1252] font-bold group-hover:translate-x-1 transition">Ver propuestas →</span>
+</a>
+<a class="group bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition" href="#ejes">
+<div class="w-12 h-12 rounded-xl bg-[#6B1252] text-white flex items-center justify-center text-xl font-black mb-4">03</div>
+<h3 class="text-xl font-bold text-slate-900">7 ejes programáticos</h3>
+<p class="mt-2 text-slate-600">Una estructura integral para revisar las prioridades de gestión del Consejo Regional.</p>
+<span class="inline-block mt-4 text-[#6B1252] font-bold group-hover:translate-x-1 transition">Ver los 7 ejes →</span>
+</a>
+</div>
+</div>
+</section><div class="bg-white border-b border-slate-200">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<div class="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-sm">
+<span class="font-bold text-slate-500 mr-1">Recorrido:</span>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-[#6B1252] hover:text-white transition" href="#candidato">Candidato</a>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-[#6B1252] hover:text-white transition" href="#equipo">Equipo</a>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-[#6B1252] hover:text-white transition" href="#sectores">Sectores</a>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-[#6B1252] hover:text-white transition" href="#arquitectura">Plan</a>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 hover:bg-[#6B1252] hover:text-white transition" href="#ejes">7 ejes</a>
+<a class="px-3 py-1.5 rounded-full bg-[#6B1252] text-white hover:bg-[#4A0B38] transition" href="#adhesion">Sumar mi apoyo</a>
+</div>
+</div>
+</div>
+<!-- Candidato Principal Highlight Section -->
+<section class="py-12 bg-white relative border-b border-slate-200" id="candidato">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+<div class="bg-gradient-to-br from-slate-50 to-amber-50/30 rounded-3xl p-6 md:p-10 border-2 border-crv-dorado/40 shadow-xl">
+<div class="grid md:grid-cols-12 gap-8 items-center">
+<!-- Candidate Photo Box -->
+<div class="md:col-span-5 text-center">
+<div class="relative inline-block w-full max-w-xs cursor-pointer group" onclick="openCvModal('carlos-cuya')">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden gold-border shadow-2xl bg-slate-100 flex items-center justify-center relative">
+<img alt="Dr. Carlos Yovani Cuya Mamani" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="carlos-cuya.jpg"/>
+<div class="hidden w-full h-full bg-slate-100 flex-col items-center justify-center text-slate-300">
+<i class="fa-solid fa-user-doctor text-8xl text-crv-guinda/30"></i>
+</div>
+<div class="absolute inset-0 bg-crv-guinda/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold text-sm">
+<i class="fa-solid fa-file-pdf mr-2 text-crv-dorado text-xl"></i> Ver Hoja de Vida / CV
+                                </div>
+</div>
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-crv-guinda text-crv-dorado px-6 py-1.5 rounded-full font-serif font-bold text-sm border border-crv-dorado shadow-lg whitespace-nowrap">
+                                Candidato a Decano
+                            </div>
+</div>
+</div>
+<!-- Candidate Details -->
+<div class="md:col-span-7 space-y-4">
+<div class="inline-flex items-center gap-2 text-crv-guinda font-semibold text-xs uppercase tracking-wider bg-crv-guinda/10 px-3 py-1 rounded-md">
+<i class="fa-solid fa-stethoscope"></i> Liderazgo Médico Colegiado
+                        </div>
+<h2 class="text-3xl md:text-4xl font-extrabold font-serif text-slate-900">
+                            Dr. Carlos Yovani Cuya Mamani
+                        </h2>
+<p class="text-sm font-bold text-crv-guinda uppercase tracking-wide">
+                            Presidente / Decano Regional
+                        </p>
+<p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                            Representamos un compromiso firme con el desarrollo profesional, la transparencia en la gestión de recursos y la defensa constante de la dignidad del médico arequipeño en todos los niveles de atención.
+                        </p>
+<div class="pt-2 flex flex-wrap gap-4">
+<button class="px-6 py-3 bg-crv-guinda text-white text-sm font-bold rounded-xl shadow-md hover:bg-crv-guindaDark transition flex items-center gap-2" onclick="openCvModal('carlos-cuya')">
+<i class="fa-solid fa-id-card text-crv-dorado"></i> Ver CV Completo
+                            </button>
+<a class="px-6 py-3 bg-white text-crv-guinda border-2 border-crv-guinda text-sm font-bold rounded-xl shadow-sm hover:bg-crv-guinda/5 transition flex items-center gap-2" href="#equipo">
+<i class="fa-solid fa-users"></i> Conoce al Equipo
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- JUNTA DIRECTIVA COMPLETA & FOTO GRUPAL -->
+<section class="py-16 bg-white" id="equipo">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<span class="text-xs font-bold text-crv-guinda uppercase tracking-widest bg-crv-guinda/10 px-3 py-1 rounded-full">Liderazgo Colegiado</span>
+<h2 class="text-3xl md:text-4xl font-extrabold font-serif text-crv-guinda mt-2">Junta Directiva Completa</h2>
+<p class="text-slate-600 mt-2">Un equipo experimentado al servicio de la orden médica en Arequipa</p>
+<div class="w-20 h-1 bg-crv-dorado mx-auto mt-4 rounded-full"></div>
+</div>
+<!-- FOTO GRUPAL DEL EQUIPO COMPLETO -->
+<div class="mb-14 max-w-5xl mx-auto">
+<div class="bg-crv-fondo p-4 md:p-6 rounded-3xl border-2 border-crv-dorado/50 shadow-xl">
+<div class="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden gold-border bg-slate-200 relative group">
+<img alt="Equipo Fortaleza Médica - Junta Directiva" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="foto-grupal-fortaleza-medica.jpg"/>
+<div class="hidden w-full h-full flex-col items-center justify-center text-slate-400 p-6 text-center">
+<i class="fa-solid fa-users-line text-6xl text-crv-guinda/40 mb-3"></i>
+<span class="font-bold text-slate-700 text-lg">Equipo Fortaleza Médica</span>
+<span class="text-xs text-slate-500">(Subir foto grupal como 'foto-grupal-fortaleza-medica.jpg')</span>
+</div>
+</div>
+<div class="mt-4 text-center">
+<h3 class="font-serif font-bold text-slate-900 text-lg">Equipo Institucional Fortaleza Médica</h3>
+<p class="text-xs text-slate-600">Unidos por un Colegio Médico Fuerte, Transparente e Integrador en Arequipa.</p>
+</div>
+</div>
+</div>
+<!-- TARJETAS DE INTEGRANTES CON ACCESO A CV -->
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- 1. DECANO / PRESIDENTE -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border-2 border-crv-dorado/60 shadow-md hover:shadow-lg transition cursor-pointer group" onclick="openCvModal('carlos-cuya')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado shadow-md bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="carlos-cuya.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dr. Carlos Yovani Cuya Mamani</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Presidente / Decano Regional</p>
+<p class="text-[11px] font-bold text-amber-700 mt-0.5">CMP N° 22096</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 2. SECRETARIO GENERAL -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border-2 border-crv-dorado/60 shadow-md hover:shadow-lg transition cursor-pointer group" onclick="openCvModal('ricardo-ibanez')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado shadow-md bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="ricardo-ibanez.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dr. Ricardo Javier Ibañez Barreda</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Secretario General</p>
+<p class="text-[11px] font-bold text-amber-700 mt-0.5">CMP N° 37542</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 3. SECRETARIO DE ÉTICA -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('daniel-salas')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="daniel-salas.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dr. Daniel Fernando Salas Palma</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Secretario de Ética y Deontología</p>
+<p class="text-[11px] text-slate-500 mt-0.5">CMP N° 53305</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 4. SECRETARIO DE DESARROLLO PROFESIONAL -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('cesar-chavez')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="cesar-chavez.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dr. César Iván Chávez López</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Secretario de Desarrollo Profesional y Científico</p>
+<p class="text-[11px] text-slate-500 mt-0.5">CMP N° 28102</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 5. SECRETARIA DE INCIDENCIA EN SALUD PÚBLICA -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('roxana-quequezana')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="roxana-quequezana.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dra. Roxana Ruth Quequezana Marín</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Secretaria de Incidencia en Salud Pública</p>
+<p class="text-[11px] text-slate-500 mt-0.5">CMP N° 46822</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 6. SECRETARIO DE ASUNTOS CONTENCIOSOS -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('edwing-bustinza')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="edwing-bustinza.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dr. Edwing Washington Bustinza Flores</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Secretario de Asuntos Contenciosos y Administrativos</p>
+<p class="text-[11px] text-slate-500 mt-0.5">CMP N° 39972</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 7. SECRETARIA DE ECONOMÍA Y FINANZAS -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('karelia-silva')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="karelia-silva.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dra. Karelia Silva Velasco</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Secretaria de Economía y Finanzas</p>
+<p class="text-[11px] text-slate-500 mt-0.5">CMP N° 49536</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 8. SECRETARIA DEL MÉDICO JOVEN -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('cinthya-cornejo')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="cinthya-cornejo.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dra. Cinthya Tatiana Cornejo Gallegos</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Secretaria del Médico Joven</p>
+<p class="text-[11px] text-slate-500 mt-0.5">CMP N° 72213</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 9. ACCESITARIA 1 -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('maritza-rocha')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="maritza-rocha.jpg"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dra. Maritza Rocha Bustinza</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Accesitaria</p>
+<p class="text-[11px] text-slate-500 mt-0.5">CMP N° 46467</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+<!-- 10. ACCESITARIO 2 -->
+<div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('gustavo-quispe')">
+<div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="logo-fortaleza-medica.png"/>
+<div class="hidden w-full h-full bg-slate-200 items-center justify-center text-crv-guinda"><i class="fa-solid fa-user-doctor text-2xl"></i></div>
+</div>
+<h4 class="font-bold text-slate-900 text-sm leading-tight group-hover:text-crv-guinda transition">Dr. Gustavo Quispe Quispe</h4>
+<p class="text-xs font-semibold text-crv-guinda uppercase tracking-wide mt-1">Accesitario</p>
+<p class="text-[11px] text-slate-500 mt-0.5">CMP N° 72185</p>
+<span class="inline-block mt-3 text-[11px] font-semibold text-crv-guinda bg-crv-guinda/10 px-3 py-1 rounded-full group-hover:bg-crv-guinda group-hover:text-white transition">
+<i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
+                    </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN DE PROPUESTAS POR SECTOR MÉDICO (RESTAURADA) -->
+<section class="py-14 bg-white border-t border-slate-200" id="compromisos">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mb-8">
+<span class="text-sm font-black uppercase tracking-wider text-[#6B1252]">En síntesis</span>
+<h2 class="mt-2 text-3xl font-black text-slate-900">¿Qué encontrarás en la propuesta?</h2>
+<p class="mt-3 text-slate-600">Los contenidos existentes se organizan en cuatro niveles para facilitar su lectura y comparación.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="rounded-2xl border border-slate-200 p-5"><div class="text-2xl font-black text-[#6B1252]">01</div><h3 class="font-bold mt-2">Representación</h3><p class="text-sm text-slate-600 mt-1">Defensa y representación profesional.</p></div>
+<div class="rounded-2xl border border-slate-200 p-5"><div class="text-2xl font-black text-[#6B1252]">02</div><h3 class="font-bold mt-2">Desarrollo</h3><p class="text-sm text-slate-600 mt-1">Desarrollo profesional y científico.</p></div>
+<div class="rounded-2xl border border-slate-200 p-5"><div class="text-2xl font-black text-[#6B1252]">03</div><h3 class="font-bold mt-2">Gestión</h3><p class="text-sm text-slate-600 mt-1">Planificación y decisiones verificables.</p></div>
+<div class="rounded-2xl border border-slate-200 p-5"><div class="text-2xl font-black text-[#6B1252]">04</div><h3 class="font-bold mt-2">Participación</h3><p class="text-sm text-slate-600 mt-1">Incidencia y articulación con los colegiados.</p></div>
+</div>
+</div>
+</section><section class="py-16 bg-gradient-to-b from-white to-crv-fondo border-t border-slate-200" id="sectores">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<span class="text-xs font-bold text-crv-guinda uppercase tracking-widest bg-crv-guinda/10 px-3 py-1 rounded-full">Compromiso Sectorial</span>
+<h2 class="text-3xl md:text-4xl font-extrabold font-serif text-crv-guinda mt-2">Propuestas por Sector Médico</h2>
+<p class="text-slate-600 text-sm mt-1">Soluciones específicas diseñadas para las necesidades reales de cada ámbito laboral</p>
+<div class="w-20 h-1 bg-crv-dorado mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Sector 1: Médicos Jóvenes y SERUMS -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition border-t-4 border-t-crv-guinda">
+<div class="w-12 h-12 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center text-xl font-bold mb-4">
+<i class="fa-solid fa-user-graduate"></i>
+</div>
+<h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Médicos Jóvenes y SERUMISTAS</h3>
+<ul class="space-y-2 text-xs text-slate-600">
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Asesoría jurídica gratuita e inmediata ante eventualidades en el SERUMS.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Talleres de capacitación continua y preparación para el Residentado Médico.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Agilización de colegiación y facilidades en trámites iniciales.</li>
+</ul>
+</div>
+<!-- Sector 2: Médicos Asistenciales y de Hospitales -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition border-t-4 border-t-crv-guinda">
+<div class="w-12 h-12 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center text-xl font-bold mb-4">
+<i class="fa-solid fa-hospital-user"></i>
+</div>
+<h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Médicos Asistenciales (MINSA / EsSalud)</h3>
+<ul class="space-y-2 text-xs text-slate-600">
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Defensa de condiciones laborales dignas, seguridad e infraestructura adecuada.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Respaldo institucional frente a la sobrecarga laboral y judicialización indebida.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Apoyo constante en reclamos de ascensos, nombramientos y escala salarial.</li>
+</ul>
+</div>
+<!-- Sector 3: Médicos Privados y Ejercicio Libre -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition border-t-4 border-t-crv-guinda">
+<div class="w-12 h-12 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center text-xl font-bold mb-4">
+<i class="fa-solid fa-clinic-medical"></i>
+</div>
+<h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Sector Privado y Consultorio Libre</h3>
+<ul class="space-y-2 text-xs text-slate-600">
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Lucha frontal contra el intrusismo profesional en la región Arequipa.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Orientación técnica y legal para la formalización y categorización de consultorios.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Alianzas estratégicas para beneficios en insumos médicos y seguros.</li>
+</ul>
+</div>
+<!-- Sector 4: Médicos Docentes e Investigadores -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition border-t-4 border-t-crv-guinda">
+<div class="w-12 h-12 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center text-xl font-bold mb-4">
+<i class="fa-solid fa-book-bookmark"></i>
+</div>
+<h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Docencia e Investigación</h3>
+<ul class="space-y-2 text-xs text-slate-600">
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Creación de fondos concursables de estímulo a la investigación médica regional.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Revista científica renovada e indexada para publicación de trabajos locales.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Convenios interinstitucionales con universidades nacionales e internacionales.</li>
+</ul>
+</div>
+<!-- Sector 5: Médicos Cesantes y Jubilados -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition border-t-4 border-t-crv-guinda">
+<div class="w-12 h-12 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center text-xl font-bold mb-4">
+<i class="fa-solid fa-heart-pulse"></i>
+</div>
+<h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Cesantes y Jubilados</h3>
+<ul class="space-y-2 text-xs text-slate-600">
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Programa permanente de salud preventiva y bienestar senior.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Espacios de integración social, cultural y recreativa en el club médico.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Reconocimiento constante a la trayectoria y valioso legado profesional.</li>
+</ul>
+</div>
+<!-- Sector 6: Médicos de Provincias (Región Arequipa) -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-md hover:shadow-xl transition border-t-4 border-t-crv-guinda">
+<div class="w-12 h-12 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center text-xl font-bold mb-4">
+<i class="fa-solid fa-map-location-dot"></i>
+</div>
+<h3 class="font-serif font-bold text-slate-900 text-lg mb-2">Médicos de Provincias</h3>
+<ul class="space-y-2 text-xs text-slate-600">
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Descentralización efectiva de servicios administrativos y capacitaciones virtuales/presenciales.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Visitas periódicas de la Junta Directiva a Caylloma, Camaná, Islay, Caravelí, Castilla, Condesuyos y La Unión.</li>
+<li class="flex items-start gap-2"><i class="fa-solid fa-check text-crv-doradoDark mt-0.5"></i> Hospedaje institucional y facilidades para médicos de provincias en Arequipa ciudad.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- PLAN DE GOBIERNO -->
+<section class="py-16 bg-crv-fondo border-t border-slate-200" id="arquitectura">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<span class="text-xs font-bold text-crv-guinda uppercase tracking-widest bg-crv-guinda/10 px-3 py-1 rounded-full">Propuesta Programática</span>
+<h2 class="text-3xl md:text-4xl font-extrabold font-serif text-crv-guinda mt-2">Plan Estratégico de Gestión</h2>
+<p class="text-slate-600 text-sm mt-1">Lámina 1: Arquitectura Estratégica y Sistema de Decisiones Verificables</p>
+<div class="w-20 h-1 bg-crv-dorado mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- 01. Arquitectura Estratégica -->
+<div class="bg-white rounded-3xl p-6 border-2 border-crv-dorado/40 shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-200">
+<span class="text-3xl font-extrabold font-serif text-crv-guinda">01</span>
+<span class="text-xs font-bold uppercase tracking-wider text-crv-guinda bg-crv-guinda/10 px-2.5 py-1 rounded-lg">Arquitectura</span>
+</div>
+<h3 class="text-lg font-bold font-serif text-slate-900 mb-4">Proceso de Decisiones</h3>
+<div class="space-y-2 text-xs font-semibold text-slate-700">
+<div class="p-2.5 rounded-xl bg-amber-50/60 border border-crv-dorado/30 flex items-center gap-2">
+<i class="fa-solid fa-magnifying-glass text-crv-guinda"></i> Diagnóstico
+                            </div>
+<div class="p-2.5 rounded-xl bg-amber-50/60 border border-crv-dorado/30 flex items-center gap-2">
+<i class="fa-solid fa-bullseye text-crv-guinda"></i> Objetivos
+                            </div>
+<div class="p-2.5 rounded-xl bg-amber-50/60 border border-crv-dorado/30 flex items-center gap-2">
+<i class="fa-solid fa-lightbulb text-crv-guinda"></i> Estrategia
+                            </div>
+<div class="p-2.5 rounded-xl bg-amber-50/60 border border-crv-dorado/30 flex items-center gap-2">
+<i class="fa-solid fa-gears text-crv-guinda"></i> Acciones
+                            </div>
+<div class="p-2.5 rounded-xl bg-amber-50/60 border border-crv-dorado/30 flex items-center gap-2">
+<i class="fa-solid fa-chart-line text-crv-guinda"></i> Medición
+                            </div>
+<div class="p-2.5 rounded-xl bg-amber-50/60 border border-crv-dorado/30 flex items-center gap-2">
+<i class="fa-solid fa-clipboard-check text-crv-guinda"></i> Control
+                            </div>
+<div class="p-2.5 rounded-xl bg-amber-50/60 border border-crv-dorado/30 flex items-center gap-2">
+<i class="fa-solid fa-rotate text-crv-guinda"></i> Aprendizaje
+                            </div>
+</div>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-200 bg-amber-50/40 p-3 rounded-xl">
+<p class="text-[11px] text-slate-600 italic text-center">
+                            "La gestión funciona como un sistema coherente de decisiones, no como acciones aisladas."
+                        </p>
+</div>
+</div>
+<!-- 02. Objetivo General y Específicos -->
+<div class="bg-white rounded-3xl p-6 border-2 border-crv-dorado/40 shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-200">
+<span class="text-3xl font-extrabold font-serif text-crv-guinda">02</span>
+<span class="text-xs font-bold uppercase tracking-wider text-crv-guinda bg-crv-guinda/10 px-2.5 py-1 rounded-lg">Objetivos</span>
+</div>
+<h3 class="text-lg font-bold font-serif text-slate-900 mb-2">Objetivo General</h3>
+<p class="text-xs text-slate-600 leading-relaxed mb-6 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                            Organizar una gestión institucional profesional, verificable y coherente que permita a los médicos conocer con claridad las propuestas y compromisos de gestión.
+                        </p>
+<h4 class="text-xs font-bold uppercase tracking-wider text-crv-guinda mb-3">Objetivos Específicos</h4>
+<div class="space-y-2.5 text-xs text-slate-700">
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">1</span>
+<span>Unificar mensajes institucionales y de defensa médica.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">2</span>
+<span>Explicar propuestas de desarrollo con sustento técnico.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">3</span>
+<span>Responder consultas con atención transparente y directa.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">4</span>
+<span>Medir y corregir periódicamente el avance de metas.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 03. Diagnóstico Estratégico -->
+<div class="bg-white rounded-3xl p-6 border-2 border-crv-dorado/40 shadow-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-200">
+<span class="text-3xl font-extrabold font-serif text-crv-guinda">03</span>
+<span class="text-xs font-bold uppercase tracking-wider text-crv-guinda bg-crv-guinda/10 px-2.5 py-1 rounded-lg">Diagnóstico</span>
+</div>
+<h3 class="text-lg font-bold font-serif text-slate-900 mb-4">Análisis Institucional</h3>
+<div class="space-y-3 text-xs">
+<div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+<div class="font-bold text-crv-guinda flex items-center gap-1.5 mb-1">
+<i class="fa-solid fa-users"></i> ¿Qué preocupa al colegiado?
+                                </div>
+<p class="text-slate-600">Necesidades laborales, expectativas profesionales e inquietudes de protección.</p>
+</div>
+<div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+<div class="font-bold text-crv-guinda flex items-center gap-1.5 mb-1">
+<i class="fa-solid fa-building-user"></i> ¿Qué puede resolver el CR V?
+                                </div>
+<p class="text-slate-600">Ámbito de competencia legal, capacidades y oportunidades institucionales directas.</p>
+</div>
+<div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+<div class="font-bold text-crv-guinda flex items-center gap-1.5 mb-1">
+<i class="fa-solid fa-chart-pie"></i> ¿Qué requiere evidencia?
+                                </div>
+<p class="text-slate-600">Temas sensibles sustentados con información financiera y técnica verificable.</p>
+</div>
+<div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+<div class="font-bold text-crv-guinda flex items-center gap-1.5 mb-1">
+<i class="fa-solid fa-circle-question"></i> ¿Dónde hay confusión?
+                                </div>
+<p class="text-slate-600">Aclaración de brechas de información y procesos administrativos del colegio.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 04. 7 EJES PROGRAMÁTICOS -->
+<section class="py-16 bg-white border-t border-slate-200" id="ejes">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<span class="text-xs font-bold text-crv-guinda uppercase tracking-widest bg-crv-guinda/10 px-3 py-1 rounded-full">Ejes de Gestión</span>
+<h2 class="text-3xl md:text-4xl font-extrabold font-serif text-crv-guinda mt-2">7 Ejes Programáticos</h2>
+<p class="text-slate-600 text-sm mt-1">Estructura integral para el fortalecimiento del Consejo Regional V Arequipa</p>
+<div class="w-20 h-1 bg-crv-dorado mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-crv-fondo rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-xl bg-crv-guinda text-crv-dorado font-bold flex items-center justify-center text-sm">1</span>
+<h3 class="font-bold text-slate-900 text-sm">Defensa y Representación Profesional</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">Asesoría jurídica oportuna y representación firme ante atropellos e intrusismo en Arequipa.</p>
+</div>
+<div class="bg-crv-fondo rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-xl bg-crv-guinda text-crv-dorado font-bold flex items-center justify-center text-sm">2</span>
+<h3 class="font-bold text-slate-900 text-sm">Bienestar del Médico y Su Familia</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">Programas de apoyo social, actividades de integración, deporte y recreación familiar.</p>
+</div>
+<div class="bg-crv-fondo rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-xl bg-crv-guinda text-crv-dorado font-bold flex items-center justify-center text-sm">3</span>
+<h3 class="font-bold text-slate-900 text-sm">Desarrollo Profesional, Ciencia e Investigación</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">Cursos, capacitaciones acreditadas y fondos de estímulo para la investigación científica.</p>
+</div>
+<div class="bg-crv-fondo rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-xl bg-crv-guinda text-crv-dorado font-bold flex items-center justify-center text-sm">4</span>
+<h3 class="font-bold text-slate-900 text-sm">Modernización y Servicios</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">Digitalización de trámites, simplificación administrativa y mejoras del local institucional.</p>
+</div>
+<div class="bg-crv-fondo rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-xl bg-crv-guinda text-crv-dorado font-bold flex items-center justify-center text-sm">5</span>
+<h3 class="font-bold text-slate-900 text-sm">Transparencia y Rendición de Cuentas</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">Informes económicos periódicos, presupuestos abiertos y gestión transparente de fondos.</p>
+</div>
+<div class="bg-crv-fondo rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-xl bg-crv-guinda text-crv-dorado font-bold flex items-center justify-center text-sm">6</span>
+<h3 class="font-bold text-slate-900 text-sm">Participación y Cercanía Institucional</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">Canales directos de diálogo con provincias y participación activa de médicos jóvenes y cesantes.</p>
+</div>
+<div class="bg-crv-fondo rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-8 h-8 rounded-xl bg-crv-guinda text-crv-dorado font-bold flex items-center justify-center text-sm">7</span>
+<h3 class="font-bold text-slate-900 text-sm">Fortalecimiento Institucional y Ética</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">Vigilancia ética constante, prestigio de la orden médica y fortalecimiento institucional.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- TARJETA FINAL DE LLAMADO AL VOTO -->
+<section class="py-16 gradient-guinda text-white relative" id="votacion">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+<div class="bg-white text-slate-900 rounded-3xl p-8 shadow-2xl border-4 border-crv-dorado max-w-xl mx-auto">
+<span class="inline-block px-4 py-1 rounded-full bg-crv-guinda text-crv-dorado font-bold text-xs uppercase tracking-widest mb-3">
+                    Este Día de Elecciones
+                </span>
+<h3 class="text-3xl font-extrabold font-serif text-crv-guinda mb-1">
+                    ¡Vota por FORTALEZA MÉDICA!
+                </h3>
+<p class="text-crv-doradoDark font-extrabold text-lg uppercase tracking-wider mb-2">
+                    "TU PRIMERO"
+                </p>
+<p class="text-slate-600 text-sm mb-6">
+                    Por una gestión transparente, humana y verdaderamente representativa en Arequipa.
+                </p>
+<div class="inline-flex flex-col items-center justify-center p-4 rounded-2xl bg-crv-guinda text-crv-dorado border-4 border-crv-dorado shadow-inner min-w-[180px]">
+<span class="font-serif font-black text-2xl tracking-wider uppercase">FORTALEZA</span>
+<span class="font-serif font-black text-xl tracking-wider uppercase">MÉDICA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MÓDULO DE ADHESIÓN Y RESPALDO (MÉDICOS, PROFESIONALES Y PÚBLICO GENERAL) -->
+<section class="py-16 bg-white" id="adhesion">
+<div class="max-w-xl mx-auto px-4">
+<div class="text-center mb-8">
+<h2 class="text-3xl font-extrabold font-serif text-crv-guinda">Súmate con tu Firma o Respaldos</h2>
+<p class="text-slate-600 text-sm mt-1">Registra tu apoyo a FORTALEZA MÉDICA para el Consejo Regional V Arequipa</p>
+</div>
+<form class="bg-crv-fondo rounded-3xl p-6 md:p-8 border border-slate-200 shadow-lg space-y-4" onsubmit="saveSupport(event)">
+<!-- SELECTOR DE PERFIL DEL SIMPATIZANTE -->
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase mb-1">¿Quién respalda?</label>
+<select class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-crv-guinda outline-none text-sm bg-white font-semibold text-slate-800" id="supporter-type" onchange="toggleFormFields()">
+<option value="medico">Médico Colegiado (CMP)</option>
+<option value="salud">Profesional de Salud / Personal Hospitalario</option>
+<option value="publico">Paciente / Público General / Ciudadano</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nombres y Apellidos</label>
+<input class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-crv-guinda outline-none text-sm bg-white" id="supporter-name" required="" type="text"/>
+</div>
+<!-- CAMPO DINÁMICO CMP -->
+<div id="field-cmp">
+<label class="block text-xs font-bold text-slate-700 uppercase mb-1">N° CMP (Colegio Médico)</label>
+<input class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-crv-guinda outline-none text-sm bg-white" id="supporter-cmp" placeholder="Ej. 12345" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase mb-1">Teléfono / WhatsApp</label>
+<input class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-crv-guinda outline-none text-sm bg-white" id="supporter-phone" placeholder="987654321" required="" type="tel"/>
+</div>
+<!-- CAMPO DINÁMICO CENTRO DE SALUD O MENSAJE -->
+<div id="field-work">
+<label class="block text-xs font-bold text-slate-700 uppercase mb-1" id="label-work">Centro de Salud / Hospital / Especialidad</label>
+<input class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-crv-guinda outline-none text-sm bg-white" id="supporter-work" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 uppercase mb-1">Mensaje o Comentario de Apoyo (Opcional)</label>
+<textarea class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-crv-guinda outline-none text-sm bg-white" id="supporter-msg" placeholder="¡Muchos éxitos al equipo de Fortaleza Médica!" rows="2"></textarea>
+</div>
+<button class="w-full py-3.5 bg-crv-guinda text-white font-bold rounded-xl shadow-md hover:bg-crv-guindaDark transition text-sm flex items-center justify-center gap-2" type="submit">
+<i class="fa-solid fa-paper-plane text-crv-dorado"></i> Confirmar Respaldo
+                </button>
+</form>
+</div>
+</section>
+<!-- MODAL POPUP PARA HOJA DE VIDA / CV -->
+<div class="fixed inset-0 bg-slate-900/70 z-50 flex items-center justify-center p-4 hidden backdrop-blur-sm" id="cv-modal">
+<div class="bg-white rounded-3xl max-w-2xl w-full p-6 md:p-8 shadow-2xl border-2 border-crv-dorado relative max-h-[90vh] overflow-y-auto">
+<button class="absolute top-4 right-4 text-slate-400 hover:text-crv-guinda w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-xl font-bold transition" onclick="closeCvModal()">
+                ×
+            </button>
+<div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-200">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-crv-dorado shrink-0 bg-slate-100">
+<img alt="" class="w-full h-full object-cover" id="modal-img" src=""/>
+</div>
+<div>
+<h3 class="text-xl font-extrabold font-serif text-slate-900" id="modal-name"></h3>
+<p class="text-xs font-bold text-crv-guinda uppercase tracking-wide" id="modal-role"></p>
+<p class="text-xs font-bold text-amber-700 mt-0.5" id="modal-cmp"></p>
+</div>
+</div>
+<div class="space-y-4 text-xs text-slate-700">
+<div>
+<h4 class="font-bold text-slate-900 text-sm mb-1 uppercase tracking-wider text-crv-guinda"><i class="fa-solid fa-graduation-cap mr-1"></i> Formación Académica &amp; Especialidad</h4>
+<p class="leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-200" id="modal-edu"></p>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 text-sm mb-1 uppercase tracking-wider text-crv-guinda"><i class="fa-solid fa-briefcase mr-1"></i> Trayectoria Profesional</h4>
+<p class="leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-200" id="modal-exp"></p>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 text-sm mb-1 uppercase tracking-wider text-crv-guinda"><i class="fa-solid fa-award mr-1"></i> Compromiso de Gestión</h4>
+<p class="leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-200" id="modal-proposal"></p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200 flex justify-between items-center">
+<a class="px-5 py-2.5 bg-crv-guinda text-white text-xs font-bold rounded-xl shadow hover:bg-crv-guindaDark transition flex items-center gap-2" href="#" id="modal-pdf-link" target="_blank">
+<i class="fa-solid fa-file-pdf text-crv-dorado"></i> Descargar CV Completo (PDF)
+                </a>
+<button class="px-4 py-2.5 bg-slate-200 text-slate-700 text-xs font-bold rounded-xl hover:bg-slate-300 transition" onclick="closeCvModal()">
+                    Cerrar
+                </button>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-8 border-t-2 border-crv-dorado text-xs">
+<div class="max-w-6xl mx-auto px-4 text-center space-y-3">
+<div class="font-serif font-bold text-base text-crv-dorado uppercase tracking-wider">FORTALEZA MÉDICA — TU PRIMERO</div>
+<p class="text-slate-400">Espacio informativo de la candidatura · Elecciones CMP 2026 · Consejo Regional V Arequipa</p>
+<p class="text-slate-500">Arequipa, Perú</p>
+</div>
+<p class="text-xs text-slate-500 max-w-3xl mx-auto mt-4 leading-relaxed">Este sitio es un espacio informativo de la candidatura FORTALEZA MÉDICA para las Elecciones CMP 2026. No constituye el sitio web institucional del Colegio Médico del Perú.</p></footer>
+<!-- Interactive Scripts -->
+<script>
+        // Datos de Candidatos para Modal de CV
+        const candidatesData = {
+            'carlos-cuya': {
+                name: 'Dr. Carlos Yovani Cuya Mamani',
+                role: 'Presidente / Decano Regional',
+                cmp: 'CMP N° 22096',
+                img: 'carlos-cuya.jpg',
+                edu: 'Médico Cirujano con especialización y trayectoria en gestión de servicios de salud en Arequipa.',
+                exp: 'Más de 20 años de experiencia profesional asistencial y en administración pública y hospitalaria.',
+                proposal: 'Liderar un Colegio Médico fuerte, transparente, humano y enfocado en defender al médico en cada provincia.',
+                pdf: 'cv-carlos-cuya.pdf'
+            },
+            'ricardo-ibanez': {
+                name: 'Dr. Ricardo Javier Ibañez Barreda',
+                role: 'Secretario General',
+                cmp: 'CMP N° 37542',
+                img: 'ricardo-ibanez.jpg',
+                edu: 'Médico Cirujano con alta capacitación en administración sanitaria y docencia universitaria.',
+                exp: 'Amplia experiencia institucional y gremial en el sector salud de Arequipa.',
+                proposal: 'Garantizar la fluidez administrativa, trámites ágiles y atención cercana a todo el colegiado.',
+                pdf: null
+            },
+            'daniel-salas': {
+                name: 'Dr. Daniel Fernando Salas Palma',
+                role: 'Secretario de Ética y Deontología',
+                cmp: 'CMP N° 53305',
+                img: 'daniel-salas.jpg',
+                edu: 'Médico especialista con vocación y principios de rigor profesional y bioética.',
+                exp: 'Reconocida labor asistencial y docente en la Región Arequipa.',
+                proposal: 'Vigilar el cabal cumplimiento de la ética médica velando por el prestigio de la orden.',
+                pdf: 'cv-daniel-salas.pdf'
+            },
+            'cesar-chavez': {
+                name: 'Dr. César Iván Chávez López',
+                role: 'Secretario de Desarrollo Profesional y Científico',
+                cmp: 'CMP N° 28102',
+                img: 'cesar-chavez.jpg',
+                edu: 'Médico Cirujano enfocado en la investigación clínica y actualización continua.',
+                exp: 'Trayectoria en docencia e investigación médica aplicada.',
+                proposal: 'Impulsar diplomados, cursos acreditados y fondos de estímulo científico para médicos.',
+                pdf: 'cv-cesar-chavez.pdf'
+            },
+            'roxana-quequezana': {
+                name: 'Dra. Roxana Ruth Quequezana Marín',
+                role: 'Secretaria de Incidencia en Salud Pública',
+                cmp: 'CMP N° 46822',
+                img: 'roxana-quequezana.jpg',
+                edu: 'Médico especialista en salud pública e intervenciones sanitarias regionales.',
+                exp: 'Experiencia en formulación de proyectos y políticas públicas de salud en Arequipa.',
+                proposal: 'Posicionar al CMP como referente técnico frente a los problemas de salud pública regional.',
+                pdf: null
+            },
+            'edwing-bustinza': {
+                name: 'Dr. Edwing Washington Bustinza Flores',
+                role: 'Secretario de Asuntos Contenciosos y Administrativos',
+                cmp: 'CMP N° 39972',
+                img: 'edwing-bustinza.jpg',
+                edu: 'Médico con conocimientos en legislación en salud y derecho laboral médico.',
+                exp: 'Experiencia en defensa de los derechos laborales de los médicos.',
+                proposal: 'Central de Atención Jurídica Médica 24/7 frente a arbitrariedades o abusos.',
+                pdf: 'cv-edwing-bustinza.pdf'
+            },
+            'karelia-silva': {
+                name: 'Dra. Karelia Silva Velasco',
+                role: 'Secretaria de Economía y Finanzas',
+                cmp: 'CMP N° 49536',
+                img: 'karelia-silva.jpg',
+                edu: 'Médico especialista con entrenamiento en finanzas institucionales.',
+                exp: 'Gestión transparente de presupuestos e informes financieros auditables.',
+                proposal: 'Publicación mensual de ejecuciones presupuestales y cuentas claras.',
+                pdf: 'cv-karelia-silva.pdf'
+            },
+            'cinthya-cornejo': {
+                name: 'Dra. Cinthya Tatiana Cornejo Gallegos',
+                role: 'Secretaria del Médico Joven',
+                cmp: 'CMP N° 72213',
+                img: 'cinthya-cornejo.jpg',
+                edu: 'Médico joven destacada en el ámbito académico y organizativo.',
+                exp: 'Representante activa de médicos residentes y jóvenes colegiados.',
+                proposal: 'Bolsa de trabajo, guía para el SERUMS, orientación laboral y agilidad en colegiación.',
+                pdf: 'cv-cinthya-cornejo.pdf'
+            },
+            'maritza-rocha': {
+                name: 'Dra. Maritza Rocha Bustinza',
+                role: 'Accesitaria',
+                cmp: 'CMP N° 46467',
+                img: 'maritza-rocha.jpg',
+                edu: 'Médico Cirujano con destacada formación médica continua e integración en salud regional.',
+                exp: 'Experiencia activa en la práctica médica asistencial en el ámbito regional de Arequipa.',
+                proposal: 'Brindar soporte institucional a las actividades del consejo regional y velar por el cumplimiento de los compromisos de gestión.',
+                pdf: 'cv-maritza-rocha.pdf'
+            },
+            'gustavo-quispe': {
+                name: 'Dr. Gustavo Quispe Quispe',
+                role: 'Accesitario',
+                cmp: 'CMP N° 72185',
+                img: null,
+                edu: 'Médico Cirujano con enfoque en el desarrollo e integración de los profesionales médicos.',
+                exp: 'Trayectoria profesional en la atención médica y participación activa en actividades de la orden.',
+                proposal: 'Respaldar las iniciativas de desarrollo profesional y asegurar la articulación con los colegiados.',
+                pdf: null
+            }
+        };
+
+        // Función abrir modal CV
+        function openCvModal(key) {
+            const data = candidatesData[key];
+            if(!data) return;
+
+            document.getElementById('modal-img').src = data.img || 'logo-fortaleza-medica.png';
+            document.getElementById('modal-name').textContent = data.name;
+            document.getElementById('modal-role').textContent = data.role;
+            document.getElementById('modal-cmp').textContent = data.cmp;
+            document.getElementById('modal-edu').textContent = data.edu;
+            document.getElementById('modal-exp').textContent = data.exp;
+            document.getElementById('modal-proposal').textContent = data.proposal;
+            const pdfLink = document.getElementById('modal-pdf-link');
+            if (data.pdf) {
+                pdfLink.href = data.pdf;
+                pdfLink.classList.remove('hidden');
+                pdfLink.textContent = 'Ver CV en PDF';
+            } else {
+                pdfLink.removeAttribute('href');
+                pdfLink.classList.add('hidden');
+            }
+
+            document.getElementById('cv-modal').classList.remove('hidden');
+        }
+
+        // Función cerrar modal CV
+        function closeCvModal() {
+            document.getElementById('cv-modal').classList.add('hidden');
+        }
+
+        // Alternar campos del formulario según tipo de simpatizante
+        function toggleFormFields() {
+            const type = document.getElementById('supporter-type').value;
+            const cmpField = document.getElementById('field-cmp');
+            const labelWork = document.getElementById('label-work');
+
+            if(type === 'medico') {
+                cmpField.style.display = 'block';
+                labelWork.textContent = 'Centro de Salud / Hospital / Especialidad';
+            } else if(type === 'salud') {
+                cmpField.style.display = 'none';
+                labelWork.textContent = 'Profesión / Hospital o Clínica donde labora';
+            } else {
+                cmpField.style.display = 'none';
+                labelWork.textContent = 'Ocupación o Institución (Opcional)';
+            }
+        }
+
+        // Formulario de Adhesión
+        function saveSupport(e) {
+            e.preventDefault();
+            alert('¡Muchas gracias por respaldar a FORTALEZA MÉDICA — TU PRIMERO!');
+            e.target.reset();
+            toggleFormFields();
+        }
+    </script>
+</body>
+</html>

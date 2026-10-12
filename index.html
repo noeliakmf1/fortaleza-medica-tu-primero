@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Fortaleza Médica | Tu primero – Consejo Regional V Arequipa | Elecciones CMP 2026</title>
+<title>Fortaleza Médica | Consejo Regional V Arequipa | Elecciones CMP 2026</title>
 <!-- Tailwind CSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- FontAwesome Icons -->
@@ -35,7 +35,7 @@
     </script>
 <style>
         .gradient-guinda {
-            background: linear-gradient(135deg, #6B1252 0%, #4A0B38 100%);
+            background: linear-gradient(135deg, rgba(107, 18, 82, 0.85) 0%, rgba(74, 11, 56, 0.88) 100%);
         }
         .gold-border {
             border: 2px solid #D4AF37;
@@ -87,24 +87,52 @@ FM
 </div>
 </nav>
 
-<!-- Header Banner -->
-<header class="gradient-guinda text-white relative overflow-hidden py-12 md:py-16 border-b-4 border-crv-dorado" id="inicio">
-<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
-<div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-<span class="inline-block px-4 py-1.5 rounded-full bg-crv-dorado/20 border border-crv-dorado text-crv-doradoLight font-semibold text-xs md:text-sm tracking-widest uppercase mb-4 shadow-sm">
-Elecciones CMP 2026 · Consejo Regional V Arequipa
-</span>
-<h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold font-serif leading-tight text-white mb-3">
-FORTALEZA MÉDICA
-</h1>
-<p class="text-xl md:text-3xl font-bold font-serif text-crv-dorado tracking-wide mb-2 drop-shadow">
-"TU PRIMERO"
-</p>
-<p class="text-sm md:text-base text-slate-200 max-w-2xl mx-auto mt-2">
-Un Colegio Médico Fuerte, Transparente, Humano y al Servicio Verdadero del Colegiado en Arequipa.
-</p>
-<div class="w-32 h-1 bg-crv-dorado mx-auto rounded-full my-4"></div>
-</div>
+<!-- Header con Fondo Carrusel Automático y Texto Fijo Encima -->
+<header class="relative overflow-hidden py-16 md:py-24 border-b-4 border-crv-dorado bg-slate-900" id="inicio">
+    
+    <!-- Contenedor de las fotos de fondo del carrusel -->
+    <div class="absolute inset-0 z-0">
+        <!-- Foto 1 -->
+        <div class="carousel-bg-slide absolute inset-0 transition-opacity duration-1000 opacity-100">
+            <img src="fotos-carrusel/foto-01.jpg" alt="Fondo 1" class="w-full h-full object-cover" onerror="this.src='logo-fortaleza-medica.png'"/>
+        </div>
+        <!-- Foto 2 -->
+        <div class="carousel-bg-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+            <img src="fotos-carrusel/foto-02.jpg" alt="Fondo 2" class="w-full h-full object-cover" onerror="this.src='logo-fortaleza-medica.png'"/>
+        </div>
+        <!-- Foto 3 -->
+        <div class="carousel-bg-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+            <img src="fotos-carrusel/foto-03.jpg" alt="Fondo 3" class="w-full h-full object-cover" onerror="this.src='logo-fortaleza-medica.png'"/>
+        </div>
+        <!-- Foto 4 -->
+        <div class="carousel-bg-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+            <img src="fotos-carrusel/foto-04.jpg" alt="Fondo 4" class="w-full h-full object-cover" onerror="this.src='logo-fortaleza-medica.png'"/>
+        </div>
+        <!-- Foto 5 -->
+        <div class="carousel-bg-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+            <img src="fotos-carrusel/foto-05.jpg" alt="Fondo 5" class="w-full h-full object-cover" onerror="this.src='logo-fortaleza-medica.png'"/>
+        </div>
+        
+        <!-- Capa semitransparente guinda para oscurecer la foto y resaltar el texto -->
+        <div class="absolute inset-0 gradient-guinda"></div>
+    </div>
+
+    <!-- Contenido de Texto Fijo Principal Encima del Carrusel -->
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10 text-white">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-crv-dorado/20 border border-crv-dorado text-crv-doradoLight font-semibold text-xs md:text-sm tracking-widest uppercase mb-3 shadow-sm">
+        Elecciones CMP 2026 · Consejo Regional V Arequipa
+        </span>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold font-serif leading-tight text-white mb-2 drop-shadow-lg">
+        FORTALEZA MÉDICA
+        </h1>
+        <p class="text-2xl md:text-4xl font-bold font-serif text-crv-dorado tracking-wide mb-3 drop-shadow-md">
+        "TU PRIMERO"
+        </p>
+        <p class="text-sm md:text-lg text-slate-100 max-w-2xl mx-auto mt-2 drop-shadow">
+        Un Colegio Médico Fuerte, Transparente, Humano y al Servicio Verdadero del Colegiado en Arequipa.
+        </p>
+        <div class="w-32 h-1 bg-crv-dorado mx-auto rounded-full my-4 shadow"></div>
+    </div>
 </header>
 
 <!-- SECCIÓN ¿POR QUÉ FORTALEZA MÉDICA? -->
@@ -202,17 +230,16 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 </div>
 </section>
 
-<!-- NUEVO RESUMEN EJECUTIVO INTERACTIVO (PILARES ESTRATÉGICOS EXTRAÍDOS DE LOS CUADROS) -->
+<!-- NUEVO RESUMEN EJECUTIVO INTERACTIVO -->
 <section class="py-14 bg-gradient-to-b from-white to-slate-50 border-b border-slate-200" id="pilares">
 <div class="max-w-6xl mx-auto px-4 sm:px-6">
 <div class="text-center mb-10">
 <span class="text-xs font-bold text-crv-guinda uppercase tracking-widest bg-crv-guinda/10 px-3 py-1 rounded-full">Resumen Estratégico</span>
 <h2 class="text-3xl font-extrabold font-serif text-slate-900 mt-2">Gestionar es Resolver Problemas</h2>
-<p class="text-slate-600 text-sm mt-1 max-w-2xl mx-auto">Experiencia comprobada para convertir los problemas del médico en decisiones e iniciativas concretas[cite: 7].</p>
+<p class="text-slate-600 text-sm mt-1 max-w-2xl mx-auto">Experiencia comprobada para convertir los problemas del médico en decisiones e iniciativas concretas.</p>
 <div class="w-20 h-1 bg-crv-dorado mx-auto mt-3 rounded-full"></div>
 </div>
 
-<!-- NAVEGACIÓN DINÁMICA DE PESTAÑAS (TABS) -->
 <div class="flex flex-wrap justify-center gap-2 mb-8" id="pilar-tabs">
 <button class="px-4 py-2.5 rounded-xl font-bold text-xs md:text-sm bg-crv-guinda text-white shadow-md transition flex items-center gap-2" onclick="switchPilarTab('tab-1', this)">
 <i class="fa-solid fa-user-shield text-crv-dorado"></i> Cuidar a Quienes Cuidan
@@ -228,9 +255,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 </button>
 </div>
 
-<!-- CONTENIDOS DINÁMICOS DE PILARES -->
 <div class="bg-white rounded-3xl p-6 md:p-8 border-2 border-crv-dorado/40 shadow-xl max-w-5xl mx-auto">
-<!-- Tab 1: Cuidar a Quienes Cuidan -->
 <div class="space-y-4" id="tab-1">
 <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
 <span class="w-10 h-10 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center font-bold text-lg"><i class="fa-solid fa-heart-pulse"></i></span>
@@ -249,7 +274,6 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 </div>
 </div>
 
-<!-- Tab 2: La Dignidad del Médico -->
 <div class="space-y-4 hidden" id="tab-2">
 <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
 <span class="w-10 h-10 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center font-bold text-lg"><i class="fa-solid fa-award"></i></span>
@@ -265,7 +289,6 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 </div>
 </div>
 
-<!-- Tab 3: Gestión que Conecta -->
 <div class="space-y-4 hidden" id="tab-3">
 <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
 <span class="w-10 h-10 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center font-bold text-lg"><i class="fa-solid fa-network-wired"></i></span>
@@ -282,7 +305,6 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 </div>
 </div>
 
-<!-- Tab 4: 5 Escalas del Sistema -->
 <div class="space-y-4 hidden" id="tab-4">
 <div class="flex items-center gap-3 pb-3 border-b border-slate-100">
 <span class="w-10 h-10 rounded-xl bg-crv-guinda/10 text-crv-guinda flex items-center justify-center font-bold text-lg"><i class="fa-solid fa-sitemap"></i></span>
@@ -292,11 +314,11 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 </div>
 </div>
 <div class="space-y-2 text-xs">
-<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">1</span><span class="font-bold text-slate-800">Puesto de Salud / Posta Médica:</span><span class="text-slate-600">Conocimiento directo del primer nivel de atención[cite: 7].</span></div>
-<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">2</span><span class="font-bold text-slate-800">Centro de Salud Red:</span><span class="text-slate-600">Gestión territorial de salud pública regional[cite: 7].</span></div>
-<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">3</span><span class="font-bold text-slate-800">Hospital Provincial / General:</span><span class="text-slate-600">Atención de mediana y alta complejidad[cite: 7].</span></div>
-<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">4</span><span class="font-bold text-slate-800">Sede Administrativa / GERESA:</span><span class="text-slate-600">Planificación y administración presupuestal[cite: 7].</span></div>
-<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">5</span><span class="font-bold text-slate-800">Colegio Médico del Perú:</span><span class="text-slate-600">Representación, ética e institucionalidad colegiada[cite: 7].</span></div>
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">1</span><span class="font-bold text-slate-800">Puesto de Salud / Posta Médica:</span><span class="text-slate-600">Conocimiento directo del primer nivel de atención.</span></div>
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">2</span><span class="font-bold text-slate-800">Centro de Salud Red:</span><span class="text-slate-600">Gestión territorial de salud pública regional.</span></div>
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">3</span><span class="font-bold text-slate-800">Hospital Provincial / General:</span><span class="text-slate-600">Atención de mediana y alta complejidad.</span></div>
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">4</span><span class="font-bold text-slate-800">Sede Administrativa / GERESA:</span><span class="text-slate-600">Planificación y administración presupuestal.</span></div>
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 border border-slate-200"><span class="w-6 h-6 rounded-full bg-crv-guinda text-white flex items-center justify-center font-bold text-[10px]">5</span><span class="font-bold text-slate-800">Colegio Médico del Perú:</span><span class="text-slate-600">Representación, ética e institucionalidad colegiada.</span></div>
 </div>
 </div>
 </div>
@@ -313,26 +335,23 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <div class="w-20 h-1 bg-crv-dorado mx-auto mt-4 rounded-full"></div>
 </div>
 
-<!-- FOTO GRUPAL DEL EQUIPO COMPLETO -->
 <div class="mb-14 max-w-5xl mx-auto">
-<div class="bg-crv-fondo p-4 md:p-6 rounded-3xl border-2 border-crv-dorado/50 shadow-xl">
-<div class="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden gold-border bg-slate-200 relative group">
+<div class="bg-slate-950 p-4 md:p-6 rounded-3xl border-2 border-crv-dorado shadow-2xl">
+<div class="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden gold-border bg-slate-900 relative group">
 <img alt="Equipo Fortaleza Médica - Junta Directiva" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="foto-grupal-fortaleza-medica.jpg"/>
 <div class="hidden w-full h-full flex-col items-center justify-center text-slate-400 p-6 text-center">
-<i class="fa-solid fa-users-line text-6xl text-crv-guinda/40 mb-3"></i>
-<span class="font-bold text-slate-700 text-lg">Equipo Fortaleza Médica</span>
+<i class="fa-solid fa-users-line text-6xl text-crv-dorado/40 mb-3"></i>
+<span class="font-bold text-slate-200 text-lg">Equipo Fortaleza Médica</span>
 </div>
 </div>
 <div class="mt-4 text-center">
-<h3 class="font-serif font-bold text-slate-900 text-lg">Equipo Institucional Fortaleza Médica</h3>
-<p class="text-xs text-slate-600">Unidos por un Colegio Médico Fuerte, Transparente e Integrador en Arequipa.</p>
+<h3 class="font-serif font-bold text-white text-lg">Equipo Institucional Fortaleza Médica</h3>
+<p class="text-xs text-slate-300">Unidos por un Colegio Médico Fuerte, Transparente e Integrador en Arequipa.</p>
 </div>
 </div>
 </div>
 
-<!-- TARJETAS DE INTEGRANTES CON ACCESO A CV -->
 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- 1. DECANO / PRESIDENTE -->
 <div class="bg-slate-50 rounded-2xl p-5 text-center border-2 border-crv-dorado/60 shadow-md hover:shadow-lg transition cursor-pointer group" onclick="openCvModal('carlos-cuya')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado shadow-md bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="carlos-cuya.jpg"/>
@@ -345,7 +364,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 2. SECRETARIO GENERAL -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border-2 border-crv-dorado/60 shadow-md hover:shadow-lg transition cursor-pointer group" onclick="openCvModal('ricardo-ibanez')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado shadow-md bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="ricardo-ibanez.jpg"/>
@@ -358,7 +377,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 3. SECRETARIO DE ÉTICA -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('daniel-salas')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="daniel-salas.jpg"/>
@@ -371,7 +390,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 4. SECRETARIO DE DESARROLLO PROFESIONAL -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('cesar-chavez')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="cesar-chavez.jpg"/>
@@ -384,7 +403,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 5. SECRETARIA DE SALUD PÚBLICA -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('roxana-quequezana')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="roxana-quequezana.jpg"/>
@@ -397,7 +416,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 6. SECRETARIO DE ASUNTOS CONTENCIOSOS -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('edwing-bustinza')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="edwing-bustinza.jpg"/>
@@ -410,7 +429,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 7. SECRETARIA DE ECONOMÍA -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('karelia-silva')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="karelia-silva.jpg"/>
@@ -423,7 +442,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 8. SECRETARIA DEL MÉDICO JOVEN -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('cinthya-cornejo')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="cinthya-cornejo.jpg"/>
@@ -436,7 +455,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 9. ACCESITARIA 1 -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('maritza-rocha')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="maritza-rocha.jpg"/>
@@ -449,7 +468,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 <i class="fa-solid fa-file-lines mr-1"></i> Ver Perfil / CV
 </span>
 </div>
-<!-- 10. ACCESITARIO 2 -->
+
 <div class="bg-slate-50 rounded-2xl p-5 text-center border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer group" onclick="openCvModal('gustavo-quispe')">
 <div class="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-2 border-crv-dorado/40 shadow-sm bg-slate-100 relative">
 <img alt="" class="w-full h-full object-cover group-hover:scale-110 transition" onerror="this.onerror=null; this.src='logo-fortaleza-medica.png'; this.setAttribute('onerror','this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';');" src="gustavo-quispe.jpg"/>
@@ -466,7 +485,7 @@ Representamos un compromiso firme con el desarrollo profesional, la transparenci
 </div>
 </section>
 
-<!-- SECCIÓN DE COMPROMISOS (EN SÍNTESIS) -->
+<!-- SECCIÓN DE COMPROMISOS -->
 <section class="py-14 bg-white border-t border-slate-200" id="compromisos">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="max-w-3xl mb-8">
@@ -757,7 +776,25 @@ Cerrar
 
 <!-- Scripts -->
 <script>
-        // Función para cambiar de pestaña en el Resumen de Pilares
+        // --- SCRIPT PARA EL CARRUSEL DE FONDO AUTOMÁTICO ---
+        let currentBgSlide = 0;
+        const bgSlides = document.querySelectorAll('.carousel-bg-slide');
+
+        function autoPlayBgCarousel() {
+            if (bgSlides.length === 0) return;
+            bgSlides[currentBgSlide].classList.remove('opacity-100');
+            bgSlides[currentBgSlide].classList.add('opacity-0');
+            
+            currentBgSlide = (currentBgSlide + 1) % bgSlides.length;
+            
+            bgSlides[currentBgSlide].classList.remove('opacity-0');
+            bgSlides[currentBgSlide].classList.add('opacity-100');
+        }
+
+        // Cambia la foto de fondo cada 5 segundos
+        setInterval(autoPlayBgCarousel, 5000);
+
+        // --- Función para cambiar de pestaña en el Resumen de Pilares ---
         function switchPilarTab(tabId, btnElement) {
             const tabs = ['tab-1', 'tab-2', 'tab-3', 'tab-4'];
             tabs.forEach(id => {

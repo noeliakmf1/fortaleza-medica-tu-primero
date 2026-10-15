@@ -1,0 +1,1 @@
+Coloca aquí los archivos PDF que quieras compartir. Luego registra cada archivo en la lista librosDisponibles de index.html. Ver INSTRUCCIONES_libros_y_plan.txt.

@@ -1057,11 +1057,48 @@ Cerrar
             }
         }
 
-        function saveSupport(e) {
+        // Registro de adhesiones en Google Sheets mediante Google Apps Script.
+        const SUPPORT_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxJlCNqdiVZ2FRkY8w-EXwOZ7SyIi8pevsRIg2s6YNSbJ477pxTOyNQFendp6OR-SIM/exec';
+
+        async function saveSupport(e) {
             e.preventDefault();
-            alert('¡Muchas gracias por respaldar a FORTALEZA MÉDICA — TU PRIMERO!');
-            e.target.reset();
-            toggleFormFields();
+            const form = e.target;
+            const button = form.querySelector('button[type="submit"]');
+            const originalButtonText = button.innerHTML;
+            const datos = {
+                tipo: document.getElementById('supporter-type').value,
+                nombres: document.getElementById('supporter-name').value.trim(),
+                cmp: document.getElementById('supporter-cmp').value.trim(),
+                telefono: document.getElementById('supporter-phone').value.trim(),
+                trabajo: document.getElementById('supporter-work').value.trim(),
+                mensaje: document.getElementById('supporter-msg').value.trim()
+            };
+
+            if (!datos.nombres || !datos.telefono) {
+                alert('Por favor, completa los nombres y el teléfono.');
+                return;
+            }
+
+            button.disabled = true;
+            button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando respaldo...';
+
+            try {
+                // no-cors evita el bloqueo CORS de Apps Script; la respuesta no es legible desde el navegador.
+                await fetch(SUPPORT_WEB_APP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify(datos)
+                });
+                alert('¡Gracias por sumarte a Fortaleza Médica! Tu respaldo ha sido enviado correctamente.');
+                form.reset();
+                toggleFormFields();
+            } catch (error) {
+                alert('No se pudo enviar el respaldo. Verifica tu conexión e inténtalo nuevamente.');
+            } finally {
+                button.disabled = false;
+                button.innerHTML = originalButtonText;
+            }
         }
     </script>
 </body>
